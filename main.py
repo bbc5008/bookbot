@@ -1,8 +1,8 @@
 def main():
         path = "books/frankenstein.txt"
         text = get_text(path)
-        #word_list = text.split()
-        #print(count_words(word_list))
+        word_list = text.split()
+        print(f"Text contains {len(word_list)} words")
         char_stat_list = characters_dict_to_sorted_list(count_characters(text))
         print("character counts for text")
         for char_stat in char_stat_list:
